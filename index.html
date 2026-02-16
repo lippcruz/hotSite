@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talí Bordini - Enfermeira e Consultora em Amamentação e Laserterapia em Coxim, MS. Especialista em saúde da mãe e do bebê.">
+    <title>Talí Bordini | Enfermeira e Consultora em Amamentação e Laserterapia</title>
+    
+    <style>
+        /* Reset e Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Accessibility - Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #e87ba8;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Header e Navegação */
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            border-bottom: 1px solid #f0e8e5;
+            padding: 1rem 2rem;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #c1567a;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.75rem 1rem;
+            display: block;
+            border-radius: 4px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            color: #c1567a;
+            background: #f8f0f4;
+        }
+
+        nav a:focus {
+            color: #c1567a;
+            background: #f8f0f4;
+            outline: none;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: #333;
+        }
+
+        .menu-toggle:focus {
+            outline: 2px solid #d47a95;
+            outline-offset: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fef9f7 0%, #fff5f2 100%);
+            padding: 4rem 2rem;
+            margin-top: 0;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            color: #c1567a;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 1rem;
+            color: #c99dc1;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #c1567a;
+            color: white;
+            padding: 1.1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: fit-content;
+            min-height: 48px;
+            box-shadow: 0 2px 8px rgba(193, 86, 122, 0.2);
+        }
+
+        .cta-button:hover {
+            background: #a8476a;
+            box-shadow: 0 4px 16px rgba(193, 86, 122, 0.3);
+        }
+
+        .cta-button:focus {
+            outline: 3px solid #c1567a;
+            outline-offset: 2px;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid #f0d5e0;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(212, 122, 149, 0.1);
+        }
+
+        .hero-card-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-card h2 {
+            font-size: 2rem;
+            color: #c1567a;
+            margin-bottom: 1rem;
+        }
+
+        .hero-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section.alt {
+            background-color: #fbf8f6;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #c1567a;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #c1567a;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Seção Sobre */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .about-text p {
+            color: #333;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .credentials-card {
+            background: white;
+            border: 2px solid #f0d5e0;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(212, 122, 149, 0.08);
+        }
+
+        .credentials-card ul {
+            list-style: none;
+        }
+
+        .credentials-card li {
+            padding: 1.1rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            color: #333;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-bottom: 1px solid #f0e8e5;
+        }
+
+        .credentials-card li:last-child {
+            border-bottom: none;
+        }
+
+        .credentials-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #c1567a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Seção Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 2px solid #f0d5e0;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(212, 122, 149, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #d47a95;
+            box-shadow: 0 6px 20px rgba(212, 122, 149, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service-card > p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 0.8rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .service-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #c1567a;
+            font-weight: bold;
+        }
+
+        /* Seção Contato */
+        .contact-section {
+            background: linear-gradient(135deg, #c1567a 0%, #a8476a 100%);
+            color: white;
+            padding: 4rem 2rem !important;
+        }
+
+        .contact-section h2 {
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-location {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .contact-whatsapp {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-icon {
+            font-size: 2rem;
+        }
+
+        .whatsapp-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .whatsapp-link:hover,
+        .whatsapp-link:focus {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        .contact-instagram {
+            margin-top: 1.5rem;
+        }
+
+        .contact-instagram a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.9rem 1.5rem;
+            border: 2px solid white;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .contact-instagram a:hover {
+            background: #f5e8f0;
+            color: #c1567a;
+        }
+
+        .contact-instagram a:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
+
+        .contact-text {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-text h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-text p {
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: #999;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Links e Accessibility */
+        a {
+            color: #c1567a;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #a8476a;
+        }
+
+        a:focus {
+            outline: 3px solid #c1567a;
+            outline-offset: 3px;
+        }
+
+        /* Responsividade - Tablet */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            header {
+                padding: 1rem 1.5rem;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Responsividade - Mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            header {
+                padding: 0.75rem 1.5rem;
+            }
+
+            .header-container {
+                flex-wrap: wrap;
+            }
+
+            .menu-toggle {
+                display: block;
+                min-width: 44px;
+                min-height: 44px;
+                padding: 0.5rem;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                gap: 0;
+                padding: 0.5rem;
+                border-bottom: 2px solid #e8d5e0;
+                display: none;
+                width: 100%;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                z-index: 99;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 1rem 1.2rem;
+                border-radius: 6px;
+                min-height: 48px;
+            }
+
+            nav a:hover,
+            nav a:focus {
+                background: #f5e8f0;
+                outline: none;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-tagline {
+                font-size: 0.9rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-card {
+                padding: 1.5rem;
+            }
+
+            .hero-card-icon {
+                font-size: 3rem;
+            }
+
+            .hero-card h2 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials-card {
+                padding: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .contact-section {
+                padding: 2rem 1.5rem !important;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-info,
+            .contact-text {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            header {
+                padding: 0.75rem 1rem;
+            }
+
+            .header-logo {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            .hero {
+                padding: 1.5rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-card-icon {
+                font-size: 3rem;
+            }
+
+            .cta-button {
+                width: 100%;
+                min-height: 48px;
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .service-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .contact-whatsapp a {
+                font-size: 1.2rem;
+            }
+
+            .contact-instagram a {
+                min-height: 44px;
+                padding: 1rem 1.5rem;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            footer p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ir para conteúdo principal</a>
+
+    <!-- Header e Navegação -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="header-logo">💧 Talí Bordini</a>
+            <button class="menu-toggle" aria-label="Menu de navegação" id="menu-toggle">☰</button>
+            <nav id="navbar">
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo">💧</div>
+                    <h1>Talí Bordini</h1>
+                    <p class="hero-tagline">ONDE CIÊNCIA E COLO SE ENCONTRAM</p>
+                    <p class="hero-subtitle">Enfermeira – Consultora em Amamentação e Laserterapia</p>
+                    <a href="tel:+5516981181068" class="cta-button">
+                        💬 Falar pelo WhatsApp
+                    </a>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-icon">👩‍⚕️</div>
+                    <h2>Profissional Qualificada</h2>
+                    <p>Dedicada ao cuidado da mãe e do bebê com ciência e acolhimento</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="alt">
+            <div class="container">
+                <h2>Sobre a profissional</h2>
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>
+                            Enfermeira pediátrica, mestre em Saúde Pública e doutoranda em Enfermagem na Atenção à Saúde, Talí Bordini combina formação acadêmica sólida com prática clínica humanizada no atendimento à gestantes, puérperas e bebês.
+                        </p>
+                    </div>
+                    <div class="credentials-card">
+                        <ul>
+                            <li>Enfermeira Pediátrica</li>
+                            <li>Mestre em Saúde Pública</li>
+                            <li>Doutoranda em Enfermagem na Atenção à Saúde</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services">
+            <div class="container">
+                <h2>Serviços</h2>
+                <div class="services-grid">
+                    <!-- Consultoria em Amamentação -->
+                    <div class="service-card">
+                        <h3>Consultoria em Amamentação</h3>
+                        <p>Suporte especializado para gestantes, mães e bebês em diferentes fases da amamentação.</p>
+                        <ul>
+                            <li>Pré-natal em Amamentação</li>
+                            <li>Primeira Mamada</li>
+                            <li>Avaliação da Pega e Posição</li>
+                            <li>Manejo da Dor</li>
+                            <li>Fissuras, Ingurgitamento e Mastite</li>
+                            <li>Relactação e Translactação</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enfermagem Pediátrica -->
+                    <div class="service-card">
+                        <h3>Enfermagem Pediátrica</h3>
+                        <p>Cuidado completo e amoroso para o desenvolvimento saudável do bebê.</p>
+                        <ul>
+                            <li>Preparo da Chegada do Bebê</li>
+                            <li>Cuidado ao Recém-Nascido</li>
+                            <li>Apoio no Pós-Parto</li>
+                            <li>Crescimento e Desenvolvimento</li>
+                        </ul>
+                    </div>
+
+                    <!-- Laserterapia -->
+                    <div class="service-card">
+                        <h3>Laserterapia</h3>
+                        <p>Tratamento inovador para acelerar cicatrização e aliviar dores.</p>
+                        <ul>
+                            <li>Fissuras Mamilares</li>
+                            <li>Alívio da Dor</li>
+                            <li>Cicatrização</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Atendimento e Contato</h3>
+                    <address>
+                        <p class="contact-location">📍 Coxim - MS</p>
+                        <div class="contact-whatsapp">
+                            <span class="whatsapp-icon">💬</span>
+                            <a href="tel:+5516981181068" class="whatsapp-link">16 98118.1068</a>
+                        </div>
+                        <div class="contact-instagram">
+                            <a href="https://instagram.com/USUARIO_DA_CLIENTE">Instagram da Talí Bordini</a>
+                        </div>
+                    </address>
+                </div>
+                <div class="contact-text">
+                    <h3>Consultoria Online e Presencial</h3>
+                    <p>Oferço atendimento personalizado, tanto para consultas online quanto presenciais em Coxim - MS.</p>
+                    <p>Entre em contato via WhatsApp para agendar sua consulta, tirar dúvidas ou conhecer mais sobre meus serviços de amamentação, enfermagem pediátrica e laserterapia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Talí Bordini. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript simples para menu responsivo -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        const navLinks = navbar.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navbar.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
