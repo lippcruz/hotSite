@@ -1,0 +1,14 @@
+# Misc
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# OS
+Thumbs.db
